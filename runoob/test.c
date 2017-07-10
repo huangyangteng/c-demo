@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 #define MONEY   10000
 
 int main()
@@ -17,6 +18,4 @@ int main()
         printf("%d年后，黑夜的投资额超过小甲鱼！\n", count);
         printf("小甲鱼的投资额是：%.2f\n", a_total);
         printf("黑夜的投资额是：%.2f\n", b_total);
-
-        return 0;
 }
