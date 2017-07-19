@@ -1,21 +1,23 @@
 #include <stdio.h>
 
-
-#define MONEY   10000
+#define NUM 5
 
 int main()
 {
-        double a_total = MONEY, b_total = MONEY;
-        int count = 0;
+        char slogans[NUM][100] = {
+                "I love FishC.com!",
+                "Keep moving!",
+                "Impossible is nothing!",
+                "Just do it!",
+                "I am what I am!"};
+        int i;
+        int a[2][2]={1,2,3,4};
+        printf("%ld\n", sizeof(a)/sizeof(a[0][0]));
 
-        do
+        for (i = 0; i < NUM; i++)
         {
-                a_total += MONEY * 0.1;
-                b_total += b_total * 0.05;
-                count++;
-        } while(a_total >= b_total);
+                printf("%s\n", slogans[i]);
+        }
 
-        printf("%d年后，黑夜的投资额超过小甲鱼！\n", count);
-        printf("小甲鱼的投资额是：%.2f\n", a_total);
-        printf("黑夜的投资额是：%.2f\n", b_total);
+        return 0;
 }
